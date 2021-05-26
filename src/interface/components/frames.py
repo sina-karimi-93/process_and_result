@@ -172,6 +172,13 @@ class RightFrameContent(QFrame):
         # STRETCHHHHHHH
         self.main_layout.addStretch()
 
+        self.get_excel_button = Button(
+            "Get Excel", callback_func=self.get_excel_func)
+        self.main_layout.addWidget(self.get_excel_button)
+
+    def get_excel_func(self):
+        pass
+
 
 class RightFrame(QFrame):
     def __init__(self, *args, **kwargs):
